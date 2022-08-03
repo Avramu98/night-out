@@ -3,8 +3,8 @@ import type { ActionFunction, LoaderFunction } from '@remix-run/node';
 import { json, redirect } from '@remix-run/node';
 import { useActionData } from '@remix-run/react';
 
-import { Layout } from '~/components/layout';
-import { FormField } from '~/components/form-field';
+import { Layout } from '~/components/example-components/layout';
+import { FormField } from '~/components/example-components/form-field';
 import { login, register, getUser } from '~/utils/example/auth.server';
 import { validateEmail, validateName, validatePassword } from '~/utils/example/validators.server';
 
@@ -63,7 +63,7 @@ export const action: ActionFunction = async ({ request }) => {
   }
 };
 
-const Login = () => {
+const LoginExample = () => {
   const actionData = useActionData();
   const firstLoad = useRef(true);
   const [action, setAction] = useState('login');
@@ -180,4 +180,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginExample;

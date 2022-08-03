@@ -1,10 +1,10 @@
-import { FormField } from '~/components/form-field';
+import { FormField } from '~/components/example-components/form-field';
 import { useState } from 'react';
 import type { ActionFunction } from '@remix-run/node';
 import { json, redirect } from '@remix-run/node';
 import { requireUserId } from '~/utils/example/auth.server';
 import { createBlog } from '~/utils/example/blog.server';
-import { Modal } from '~/components/modal';
+import { Modal } from '~/components/example-components/modal';
 
 export const action: ActionFunction = async ({ request }) => {
   const userId = await requireUserId(request);

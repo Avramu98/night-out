@@ -1,6 +1,6 @@
 import type { LoaderFunction } from '@remix-run/node';
 import { getUser } from '~/utils/example/auth.server';
-import { Layout } from '~/components/layout';
+import { Layout } from '~/components/example-components/layout';
 import { Outlet, useLoaderData } from '@remix-run/react';
 import { json } from '@remix-run/node';
 import { getProjects, getTasks } from '~/utils/example/meisterTask.server';

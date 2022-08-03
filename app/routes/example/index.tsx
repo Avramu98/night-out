@@ -4,7 +4,7 @@ import { requireUserId } from '~/utils/example/auth.server';
 import { deleteBlog, editBlog, getRecentBlogs } from '~/utils/example/blog.server';
 import { Form, useLoaderData, useNavigate } from '@remix-run/react';
 import { useState } from 'react';
-import { FormField } from '~/components/form-field';
+import { FormField } from '~/components/example-components/form-field';
 
 export const action: ActionFunction = async ({ request }) => {
   const form = await request.formData();
